@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directivePractice">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body ng-controller="mainCtrl">
+
+  <ul ng-repeat="lesson in lessons">
+    <lesson-hider mylesson="lesson"></lesson-hider><br />
+  </ul>
+
+  {{test}}
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="lessonCtrl.js"></script>
+  <script src="lessonHider.js"></script>
+  <script src="lessonService.js"></script>
+</body>
+</html>
